@@ -124,7 +124,11 @@ h5 {
 
 .card-text {
     color: #000000;
+    display: flex;
+    justify-content: center;
+    font-size: small;
 }
+
 .card-body {
     padding: 0;
     background-color: #FFFFFF;
@@ -139,6 +143,9 @@ h5 {
 }
 
 .vestuario {
-    width: 50%;
-    border-color: none;
+    background-color: #FFFFFF;
+    width: 80%;
+    box-shadow: none;
+    border: none;
+    font-size: small;
 }
