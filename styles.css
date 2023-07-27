@@ -15,6 +15,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+}
+
+.top-bar {
+    background: linear-gradient(90deg, rgba(236,92,58,1) 0%, rgba(192,63,81,1) 100%);
+    color: #FFFFFF;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    padding-top: 3%;
+}
+
+.delivery-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-hites {
@@ -26,6 +44,7 @@ body {
 
 .logo-hites {
     width: 20%;
+    margin: 2%;
 }
 
 #searchbar {
@@ -38,6 +57,18 @@ body {
     color: #FFFFFF;
     background-color: transparent;
     border: none;
+}
+
+.btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: #F4A642;
+    border-color: #F4A642;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: #F4A642;
+    border-color: #F4A642;
 }
 
 /* SHOPPING SECTION */
@@ -57,14 +88,20 @@ body {
 
 .container-elements {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 7%;
 }
 
 #title {
     width: 30%;
     opacity: 50%;
     transform: rotate(270deg);
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h5 {
+    max-width: 14ch;
 }
 
 .container-text {
@@ -77,13 +114,31 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 5%;
 }
 
 .card {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    margin: 3%;
 }
 
 .card-text {
     color: #000000;
+}
+.card-body {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.subtitle {
+    font-weight: 200;
+}
+
+.vestuario {
+    width: 50%;
+    border-color: none;
 }
